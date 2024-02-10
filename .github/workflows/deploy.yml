@@ -1,5 +1,8 @@
-on: push
 name: 🚀 Deploy website on push
+on:
+  push:
+    branches:
+      - main
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -14,6 +17,6 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /test.alphaflare.co.ke/
+        server-dir: /test.alphaflare.co.ke
 
 
