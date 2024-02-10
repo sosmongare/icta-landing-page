@@ -19,5 +19,6 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /
         protocol: ftp
+        passive: true
 
 
